@@ -50,6 +50,7 @@ class AdminController extends Controller
 
     public function captcha(Request $request)
     {
+        ob_clean();
         //$tmp = 1;
         //生成验证码图片的Builder对象，配置相应属性
         $builder = new CaptchaBuilder;
